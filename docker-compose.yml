@@ -14,11 +14,11 @@ services:
       - db
   db:
     image: postgres:16.1
-    container_name: twitter_clone_db
+    container_name: cms_business_manager
     restart: always
     ports:
       - "5433:5432"
     environment:
-      - POSTGRES_DB=twitter_clone
+      - POSTGRES_DB=cms_business_manager
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=Resolute*2024
+      - POSTGRES_PASSWORD=Masinga*2024
